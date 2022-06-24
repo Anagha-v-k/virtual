@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:vehicleassistant/screens/petrol_register.dart';
 import 'package:vehicleassistant/screens/user_register.dart';
+import 'package:vehicleassistant/screens/userhome.dart';
 import 'package:vehicleassistant/screens/workreg.dart';
 
 class LoginPage extends StatelessWidget {
@@ -57,6 +58,12 @@ class LoginPage extends StatelessWidget {
               child: ElevatedButton(
                   onPressed: () {
                     formkey.currentState!.validate();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return Userhome();
+                      }),
+                    );
                   },
                   child: Text('Login')),
             ),

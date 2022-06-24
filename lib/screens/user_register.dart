@@ -25,7 +25,7 @@ class UserReg extends StatelessWidget {
                   horizontal: 80, vertical: deviceHeight * .01),
               child: TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(), label: Text('username')),
+                    border: OutlineInputBorder(), label: Text('user name')),
               ),
             ),
             Padding(
